@@ -1,0 +1,124 @@
+body {
+    margin-right: 3%; 
+    margin-left: 3%; 
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #fffffc;
+}
+
+.navbar {
+    margin-top: 2%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size:24px;
+}
+
+.name{
+    color: #4E4E4E
+}
+
+.other-pages {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    justify-content: space-between;
+    padding-right: 6%;
+}
+
+.nav-text {
+    margin-right: 8%;
+    display: inline-block;
+    position: relative;
+    color: #BEBEBE;
+  
+}
+
+.nav-text:hover{
+    color:#4E4E4E;
+}
+
+.nav-text:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(78, 113, 255);
+    transition: 300ms;
+  }
+  
+  .nav-text:hover:after {
+    width: 100%;
+  }
+  
+  .nav-text:not(:hover):after {
+    right: 0;
+    left: auto;
+  }
+
+
+
+
+.intro{
+    margin-top: 12%;
+    margin-left:11%;
+    margin-right:13%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hi{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.quick-bio{
+    font-size: 20px;
+    line-height:2;
+}
+
+.highlight-pink {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(255, 0, 122, 0.6) 65%);
+}
+
+.highlight-yellow {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(250, 255, 0, 0.7) 65%);
+}
+
+
+
+.case-studies{
+    margin-left: 11%;
+    margin-right:11%
+}
+
+.case-studies-title{
+    display: flex;
+    justify-content: center;
+    font-size:40px;
+    margin-top: 35%;
+    margin-bottom: 3%;
+}
+
+.case-studies-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the cards horizontally */
+    gap: 90px; /* Add some gap between the cards */
+}
+
+.cards {
+    width: 30vw;
+    height: 50vh;
+    background-color: rgba(0, 109, 168, 0.663);
+    border-radius: 3%;
+}
+
+@media (max-width: 650px) {
+  .cards {
+      flex: 1 1 calc(100% - 20px); /* Single card per row for smaller screens */
+  }
+}
