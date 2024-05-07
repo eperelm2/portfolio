@@ -35,17 +35,18 @@
 
 }
 
-.the-machine{
-    margin-top: 6%;
+.role-row{
     display: flex;
     flex-direction: row;
-
+    justify-content: space-evenly;
+    margin-top: 1%;
 }
 
-.machine-column{
+.reimagined-terminal, .our-task, .onboarding-research, .beginning-design, .og-low-fi{
+    margin-top: 6%;
     display: flex;
     flex-direction: column;
-    margin-right:39%;
+
 }
 
 .sub-title{
@@ -61,91 +62,50 @@
     color: #7B7B7B;
 }
 
-#machine-text{
-    margin-top: 2%;
+.right-column{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    /* margin-left: 29%; */
 }
 
-.machine-image{
-    width: 42vw;
-    height: 40vh;
-    margin-right: 3%;
-}
-
-.context{
-    margin-top: 6%;
-}
-
-.understanding{
+.our-task-picture-row{
     display: flex;
     flex-direction: row;
-    margin-top:6%;
+  
 }
 
-.understanding-image{
-    width: 38vw;
-    height: 38vh;
-}
-
-.understanding-column{
+.our-task-column{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    margin-left: 28%;
 }
 
-#understanding-text {
-    text-align: end; 
+.confused-image{
+    width:200px;
+    height:200px;
 }
 
-.observations , .findings, .personas, .story , .takeaways{
+.onboarding-research-column{
     display: flex;
     flex-direction: column;
-    margin-top:6%;
 }
 
-#additional-text{
-margin-top: 4%;
+.onboarding-image{
+    width:30vw;
+    height:30vh;
 }
 
-.findings-column{
-    margin-right: 10%;
-}
-
-.first-row, .second-row ,.third-row{
+.onboarding-research-row{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
-.money-image{
-    width: 15vw;
-    height: 15vh;
-    display: flex;
-    margin-right: 7%;
+#research-text{
+    margin-right: 10%;
 }
 
-#first-text{
-    margin-right: 27%;
-}
-
-.second-row, .third-row{
-    margin-top: 4%;
-}
-
-#second-row-text{
-    display: flex;
-    text-align: end;
-    margin-left: 27%;
-}
-
-.unaesthetic-machine-image , .confused-image{
-    width: 25vw;
-    height: 25vh;
-}
-
-
-.row-pictures {
+.sketches , .low-fi{
     margin-top: 4%;
     display: flex;
     flex-direction: row;
@@ -155,15 +115,3 @@ margin-top: 4%;
     height: 80vh;
     border-radius: 9px;
 }
-
-.persona-image {
-    width: 30vw;
-    height: 90%; /* Ensure the div takes up the full height of the parent */
-    display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Align items horizontally */
-    padding: 3%;
-    padding-left: 6%;
-    padding-right: 6%;
-}
-

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import CSS styles -->
+    <title>Development Case Study</title>
+    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styling/iterative.css" /> 
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="name">EMILY PERELMAN</div>
+      <div class="other-pages"> 
+        <div class="nav-text" onclick="goToCaseStudies()">WORK</div>
+        <div class="nav-text">ABOUT</div>
+        <div class="nav-text">RESUME</div>
+      </div>
+    </div>
+
+    <div class="main-container">
+        <h1 class="title">Working title</h1>
+        <div class="overview">It is essential to remain up-to-date on user feedback and a user’s experience. By collaborating with a team and working with Warp, we were able to take their previously received client feedback to design and improve the onboarding experience of their modernized terminal.</div>
+        <div class="image-and-role">
+            <div class="title-img"></div>
+            <div class="role-row">
+                <div class="role">Role: </div>
+                <div class="role">Team: </div>
+                <div class="role">Timeline: </div>
+            </div>
+        </div>
+
+
+        <div class="reimagined-terminal">
+            <div class="sub-title">WARP'S REIMAGINED TERMINAL</div>
+            <div class="sub-text">Warp’s mission is to re-create the terminal and command line experience in a modern, efficient, and more usable app. They have incorporated features such as the Warp drive for collaboration, Warp AI, and AI auto correction to reimagine a user’s terminal.</div>
+        </div>
+
+        <div class="our-task">
+            <div class="our-task-column">
+                <div class="our-task-picture-row">
+                     <img class="confused-image" src="images/Confused.png" alt="Confused">
+                     <img class="confused-image" src="images/Confused.png" alt="Confused">
+                     <img class="confused-image" src="images/Confused.png" alt="Confused">
+                </div>
+               
+                <div class="right-column">
+                    <div class="sub-title">OUR TASK</div>
+                    <div class="sub-text">Our team of four was tasked specifically with altering the onboarding experience. The current onboarding process starts with a marketing survey prior to the download of the product and is followed by a brief tutorial on some features in their organizational structure of “blocklists.” We focused on improving and expanding the sequence to keep users engaged and well-informed on all of the unique features. Through our work, Warp was looking to streamline user setup and minimize the time needed to figure out if the product is right for them.</div>
+                </div>
+
+            </div>
+           
+           
+        </div>
+
+        <div class="onboarding-research">
+            <div class="onboarding-research-column">
+                <div class="sub-title">ONBOARDING RESEARCH</div>
+                <div class="onboarding-research-row">
+                    <div class="sub-text" id="research-text">To begin our remodeling of the onboarding experience, we read through Warp’s product brief and feature list to further understand what features they wanted us to handle as well as the users they were looking to target. I went through the downloading and onboarding process for personal research and took notes about what features made sense and what I found particularly confusing. We reached out to the design team and asked for clarifications on company jargon and the motivation of the product. We broadened our research to consider how other companies handled their onboarding experience and what enjoyable and reliable experiences we could implement in our revised onboarding prototype.</div>
+           
+                    <img class="onboarding-image" src="images/Onboarding.png" alt="Onboarding Image">
+                </div>
+              
+        </div>
+        </div>
+
+        <div class="beginning-design">
+            <div class="right-column">
+                <div class="sub-title">BEGINNING OF DESIGN</div>
+                <div class="sub-text">Our team set out to create eight independent sketches, two per person. We each thought of a rather straightforward solution as well as a more far fetched and elaborate design. From here, we moved to create one low-fi wireframe as a group. We spent a lot of time analyzing and determining what features made the most sense from each of our sketches to include in the final development. We compared and shared feedback on what we thought would create the best and more efficient design. Specifically from my research and sketching, we decided to incorporate hidden, but distinctive, features that were missing in the onboarding experience, such as the Warp drive and the AI features.</div>
+            </div>
+
+        </div>
+       
+    </div>
+
+    <div class="sketches">
+        SKETCHES:
+       
+    </div>
+
+    <div class="main-container">
+        <div class="og-low-fi">
+            <div class="sub-title">ORIGINAL LOW-FI DESIGN</div>
+            <div class="sub-text">After extensive discussion about which features to incorporate, we designed our first low-fi wireframe. We adjusted the login process to differentiate the text of logging in and signing up. We also moved the sign-up screen and marketing survey into the Warp terminal app itself, but kept both of these features as separate modals. Our goal was to keep these two components together but be distinct from the command-line interaction within the terminal. We adjusted the marketing survey to remove the users need to click the “Next” button in the survey, and instead replaced it with an automatic advance of the questions. We decided to keep the “in-blocklist” experience once the user reaches the terminal, meaning the appearance of a typical scrolling command-by-command terminal UI with the addition of selectable blocks. We expanded on Warp’s existing configuration steps to allow users to select their shell in order to reduce confusion about porting over their existing setup. We then walked through Warp’s features: we attempted to implement a balance between already existent Onboarding components and introducing different features to promote the uniqueness of the app .</div>
+        </div>
+    </div>
+
+    <div class="low-fi">
+        low-fi:
+       
+    </div>
+
+
+    
+
+
+  
+    <script>
+      function goToCaseStudies() {
+        window.location.href = "index.html#caseStudies"; // Add the section ID as a hash parameter
+      }
+
+      window.onload = function() {
+      // Check if the URL contains a hash parameter
+      const hash = window.location.hash;
+      if (hash === "#caseStudies") {
+        // Scroll to the corresponding section
+        const caseStudiesSection = document.getElementById("caseStudies");
+        if (caseStudiesSection) {
+          caseStudiesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+    </script>
+  </body>
+  
