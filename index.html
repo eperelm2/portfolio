@@ -11,9 +11,9 @@
     <div class="navbar">
       <div class = "name">EMILY PERELMAN</div>
       <div class = "other-pages"> 
-          <div class = "nav-text">WORK</div>
-          <div class = "nav-text">ABOUT</div>
-          <div class = "nav-text">FUN</div>
+          <div class = "nav-text" onclick="scrollFunction()">WORK</div>
+          <div class = "nav-text" >ABOUT</div>
+          <!-- <div class = "nav-text">FUN</div> -->
           <div class = "nav-text">RESUME</div>
       </div>
     </div>
@@ -23,12 +23,48 @@
       <div class = "quick-bio">I’m an aspiring Product Manager with a passion for analyzing user research to design engaging and unique user interfaces designing <span class="highlight-pink">captivating</span> and <span class="highlight-yellow">unique</span> user interactions that meet their needs.  </div>
     </div>
 
-    <div class="case-studies">
+    <div class="case-studies" id="caseStudies">
       <div class= "case-studies-title">CASE STUDIES</div>
       <div class= "case-studies-cards">
-        <div class="cards development-case"></div>
-        <div class="cards iterative-case"></div>
-        <div class="cards personas-case"></div>
+        <div class="cards development-case" onclick="goToDevelopment()">
+          <div class="card-image"></div>
+          <div class="card-desc" >development</div>
+        </div>
+        <div class="cards iterative-case">
+          <div class="card-image"></div>
+          <div class="card-desc">iterative design</div>
+        </div>
+        <div class="cards personas-case">
+          <div class="card-image"></div>
+          <div class="card-desc">personas</div>
+        </div>
       </div>
     </div>
+
+
+    <hr>
+    <div class="bottom-bar">
+     
+        <div class="lets-talk">
+          Let's talk!
+        </div>
+
+        <div class = "icons">
+          <div class="linkedin">linked</div>
+          <div class="email">gmail</div>
+        </div>
+
+    </div>
+
+
+    <script>
+      function scrollFunction() {
+        const element = document.getElementById("caseStudies");
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function goToDevelopment() {
+        window.location.href = "development.html";
+      }
+      </script>
   </body>
