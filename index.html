@@ -34,7 +34,7 @@
           <div class="card-image"></div>
           <div class="card-desc">iterative design</div>
         </div>
-        <div class="cards personas-case">
+        <div class="cards personas-case" onclick="goToPersonas()">
           <div class="card-image"></div>
           <div class="card-desc">personas</div>
         </div>
@@ -63,12 +63,16 @@
         element.scrollIntoView({ behavior: 'smooth' });
       }
 
-      function goToDevelopment() {
-        window.location.href = "development.html";
+      function goToPersonas() {
+        window.location.href = "personas.html";
       }
 
       function goToIterative() {
         window.location.href = "iterative.html";
+      }
+
+      function goToDevelopment() {
+        window.location.href = "development.html";
       }
       </script>
   </body>

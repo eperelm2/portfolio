@@ -42,7 +42,7 @@
     margin-top: 1%;
 }
 
-.reimagined-terminal, .our-task, .onboarding-research, .beginning-design, .og-low-fi{
+.reimagined-terminal, .our-task, .onboarding-research, .beginning-design, .og-low-fi,.first-critique, .reworking, .takeaways {
     margin-top: 6%;
     display: flex;
     flex-direction: column;
@@ -115,3 +115,43 @@
     height: 80vh;
     border-radius: 9px;
 }
+
+.first-critique-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.thumb-image{
+    width:30vw;
+    height:30vh;
+    margin-right: 18%;
+}
+
+.style-guide{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #E6E6E6;
+    width: 100%; /* Adjusted width calculation */
+    height: 80vh;
+    border-top-left-radius: 9px; 
+    border-top-right-radius: 9px;
+    /* border-radius: 9px; */
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #ededed;
+    width: 100%; /* Adjusted width calculation */
+    height: 80vh;
+    border-bottom-left-radius: 9px; 
+    border-bottom-right-radius: 9px;
+    /* border-radius: 9px; */
+}
+
