@@ -5,11 +5,12 @@
     <!-- import CSS styles -->
     <title>Emily Perelman Portfolio</title>
     <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
 
   <body>
     <div class="navbar">
-      <div class = "name">EMILY PERELMAN</div>
+      <div class = "name" id="name" onclick="scrollUpFunction">EMILY PERELMAN</div>
       <div class = "other-pages"> 
           <div class = "nav-text" onclick="scrollFunction()">WORK</div>
           <div class = "nav-text" >ABOUT</div>
@@ -20,23 +21,47 @@
 
     <div class="intro">
       <div class = "hi">Hi, I'm Emily!</div>
-      <div class = "quick-bio">I’m an aspiring Product Manager with a passion for analyzing user research to design engaging and unique user interfaces designing <span class="highlight-pink">captivating</span> and <span class="highlight-yellow">unique</span> user interactions that meet their needs.  </div>
+      <div class = "quick-bio">I’m a Product Manager with a passion for analyzing user research to design <span class="highlight-pink">engaging</span> and <span class="highlight-yellow">unique</span> user interfaces that meet their needs.</div>
     </div>
 
     <div class="case-studies" id="caseStudies">
       <div class= "case-studies-title">CASE STUDIES</div>
       <div class= "case-studies-cards">
         <div class="cards development-case" onclick="goToDevelopment()">
-          <div class="card-image"></div>
-          <div class="card-desc" >development</div>
+          <div class="card-image">
+            <img class="logo" src="images/Developmentlogo.png" alt="Development logo">
+          </div>
+          <div class="features">
+              <div class="feat">React</div>
+              <div class="feat">JavaScript</div>
+              <div class="feat">Competitive Analysis</div>
+          </div>
+          <div class="card-desc" >Development WORKING TITLE</div>
+          <div class="quick-card-desc" >quick description quick description quick description</div>
         </div>
         <div class="cards iterative-case" onclick="goToIterative()">
-          <div class="card-image"></div>
-          <div class="card-desc">iterative design</div>
+          <div class="card-image">
+            <img class="logo" src="images/Warplogo.png" alt="Warp logo">
+          </div>
+          <div class="features">
+            <div class="feat">Figma</div>
+            <div class="feat">Prototyping</div>
+            <div class="feat">Collaboration</div>
+        </div>
+          <div class="card-desc">iterative design WORKING TITLE</div>
+          <div class="quick-card-desc" >quick description quick description quick description</div>
         </div>
         <div class="cards personas-case" onclick="goToPersonas()">
-          <div class="card-image"></div>
-          <div class="card-desc">personas</div>
+          <div class="card-image">
+            <img class="logo" src="images/Personaslogo.png" alt="Personas logo">
+          </div>
+          <div class="features">
+            <div class="feat">Storyboarding</div>
+            <div class="feat">User Interviews</div>
+            <div class="feat">Target User</div>
+        </div>
+          <div class="card-desc">personas WORKING TITLE</div>
+          <div class="quick-card-desc" >quick description quick description quick description</div>
         </div>
       </div>
     </div>
@@ -50,8 +75,12 @@
         </div>
 
         <div class = "icons">
-          <div class="linkedin">linked</div>
-          <div class="email">gmail</div>
+          <div class="linkedin"><i class="fab fa-linkedin fa-2x"></i></div>
+          <div class="email"><i class="fas fa-envelope fa-2x"></i></div>
+        </div>
+
+        <div class="made">
+          coded with love by Emily Perelman 
         </div>
 
     </div>
@@ -60,6 +89,11 @@
     <script>
       function scrollFunction() {
         const element = document.getElementById("caseStudies");
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function scrollUpFunction(){
+        const element = document.getElementById("name");
         element.scrollIntoView({ behavior: 'smooth' });
       }
 

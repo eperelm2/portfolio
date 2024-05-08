@@ -110,9 +110,10 @@ body {
 }
 
 .cards {
-    width: 30vw;
-    height: 50vh;
-    background-color: rgb(216, 216, 216);
+    width: 35vw;
+    height: 60vh;
+    background-color: rgba(245, 245, 245, 0.589);
+    /* background-color: rgb(216, 216, 216); */
     border-radius: 3%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-bottom:5%;
@@ -126,7 +127,50 @@ body {
     background-color: rgba(0, 109, 168, 0.663);
     width: 100%;
     height:65%;
-    border-radius: 5px;
+    border-radius: 7px;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.card-desc{
+    margin-left: 6%;
+    margin-top:4%;
+    font-size:25px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.748);
+}
+
+.quick-card-desc{
+    margin-top: 2%;
+    margin-left: 6%;
+    font-size:16px;
+    color: rgba(0, 0, 0, 0.529);
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    margin-left:6%;
+    margin-top: 3%;
+    /* justify-content: space-around; */
+}
+
+.feat{
+    border-radius: 5px; /* Adjust border-radius for rounded corners */
+    border: 1px solid #fb00ff;
+    color:#fb00ff;
+    padding: 5px;
+    margin-right:2%;
+    font-size:12px;
+    font-weight:500
+    /* border: black; */
+    /* background-color: green;  */
+    /* margin: 10px; Adjust margin between features */
 }
 
 .bottom-bar {
@@ -139,6 +183,7 @@ body {
 .icons {
     display: flex;
     flex-direction: row;
+    margin-top: 2%;
     /* Adjust width and height to accommodate circle size */
     
 }
@@ -146,34 +191,32 @@ body {
 .linkedin {
     width: 40px; /* or set it to a value based on the total width of your icons */
     height: 40px; /* or set it to a value based on the total height of your icons */
-    background-color: rgb(216, 216, 216);
+    /* background-color: rgb(216, 216, 216); */
     border-radius: 50%; /* To make it a circle */
     margin-right: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .email{
     width: 40px; /* or set it to a value based on the total width of your icons */
     height: 40px; /* or set it to a value based on the total height of your icons */
-    background-color: rgb(216, 216, 216);
+    /* background-color: rgb(216, 216, 216); */
     border-radius: 50%; /* To make it a circle */
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lets-talk{
     font-size:40px;
-    /* display:flex;
-    justify-content: center;
-    align-content: center; */
 }
 
-/* .icons{
-    width: 40px;
-    height:40px;
-    background-color: rgb(216, 216, 216);
-    display:flex;
-    border-radius: 25px;
-    align-items: center;
-    justify-content: center;
-} */
+.made{
+    margin-top: 2%;
+    display: flex;
+}
 
 @media (max-width: 650px) {
   .cards {

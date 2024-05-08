@@ -10,7 +10,7 @@
 
   <body>
     <div class="navbar">
-      <div class="name">EMILY PERELMAN</div>
+      <div class="name" onclick="goHome()">EMILY PERELMAN</div>
       <div class="other-pages"> 
         <div class="nav-text" onclick="goToCaseStudies()">WORK</div>
         <div class="nav-text">ABOUT</div>
@@ -83,6 +83,11 @@
 
   
     <script>
+
+        function goHome(){
+        window.location.href = "index.html"
+      }
+        
       function goToCaseStudies() {
         window.location.href = "index.html#caseStudies"; // Add the section ID as a hash parameter
       }
