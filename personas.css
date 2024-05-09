@@ -20,19 +20,46 @@
     text-align: center; /* still think about this */
     font-size: 20px;
     margin-top: 6%;
+    /* margin-left:12%;
+    margin-right:12%; */
     
 }
 
-.title-img{
-    background-color: wheat;
-    width: 70%;
-    height: 350px;
+.row-intro{
     margin-top: 4%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 17%;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    background-color: #E6E6E6;
+    width: 100%; 
+    height: 40vh;
+    border-radius: 9px;
+}
 
+.role{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-left: 4%;
+    margin-top: 3%;
+    line-height:2;
+    /* margin-right:31% */
+}
+
+.inside-story-image{
+    border-radius: 8px;
+    height:90%;
+    display: flex;
+    justify-content: center;
+}
+
+#story-image{
+    margin-left: auto;
+    margin-right:3%
+}
+
+.role-bold{
+    font-weight: bold;
 }
 
 .the-machine{
@@ -118,6 +145,17 @@ margin-top: 4%;
 
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%; 
+}
+
+.linear-image, .linear-2-image{
+    width:35vw;
+    height:50vh;
+}
+
 .money-image{
     width: 15vw;
     height: 15vh;
@@ -158,12 +196,19 @@ margin-top: 4%;
 
 .persona-image {
     width: 30vw;
-    height: 90%; /* Ensure the div takes up the full height of the parent */
+    height: 90%; 
     display: flex;
     align-items: center; /* Align items vertically */
     justify-content: center; /* Align items horizontally */
     padding: 3%;
     padding-left: 6%;
     padding-right: 6%;
+}
+
+.story-image{
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
 }
 

@@ -58,9 +58,6 @@ body {
     left: auto;
   }
 
-
-
-
 .intro{
     margin-top: 16%; /* 12 */
     margin-left:11%;
@@ -101,6 +98,7 @@ body {
     font-size:40px;
     margin-top: 35%;
     margin-bottom: 3%;
+    font-weight: bold;
 }
 
 .case-studies-cards {

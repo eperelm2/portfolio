@@ -6,6 +6,7 @@
     <title>Emily Perelman Portfolio</title>
     <link rel="stylesheet" href="styles.css" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
   </head>
 
   <body>
@@ -22,6 +23,8 @@
     <div class="intro">
       <div class = "hi">Hi, I'm Emily!</div>
       <div class = "quick-bio">I’m a Product Manager with a passion for analyzing user research to design <span class="highlight-pink">engaging</span> and <span class="highlight-yellow">unique</span> user interfaces that meet their needs.</div>
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.0/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/Da724f74VC7dXNJg/scene.splinecode"></spline-viewer>
     </div>
 
     <div class="case-studies" id="caseStudies">
@@ -48,8 +51,8 @@
             <div class="feat">Prototyping</div>
             <div class="feat">Collaboration</div>
         </div>
-          <div class="card-desc">iterative design WORKING TITLE</div>
-          <div class="quick-card-desc" >quick description quick description quick description</div>
+          <div class="card-desc">All On Board</div>
+          <div class="quick-card-desc" >Reimagining the Terminal</div>
         </div>
         <div class="cards personas-case" onclick="goToPersonas()">
           <div class="card-image">
@@ -60,8 +63,8 @@
             <div class="feat">User Interviews</div>
             <div class="feat">Target User</div>
         </div>
-          <div class="card-desc">personas WORKING TITLE</div>
-          <div class="quick-card-desc" >quick description quick description quick description</div>
+          <div class="card-desc">Person, Place, and Thing</div>
+          <div class="quick-card-desc" >Primary User Research</div>
         </div>
       </div>
     </div>
@@ -87,6 +90,7 @@
 
 
     <script>
+
       function scrollFunction() {
         const element = document.getElementById("caseStudies");
         element.scrollIntoView({ behavior: 'smooth' });
