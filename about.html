@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import CSS styles -->
+    <title>Development Case Study</title>
+    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styling/about.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="name" onclick="goHome()">EMILY PERELMAN</div>
+      <div class="other-pages"> 
+        <div class="nav-text" onclick="goToCaseStudies()">WORK</div>
+        <div class="nav-text">ABOUT</div>
+        <div class="nav-text">RESUME</div>
+      </div>
+    </div>
+
+    <div class="main-container">
+        <div class="about-me">About Me</div>
+        <div class="picture-text-row">
+            <div class="picture">
+                <img class= "my-picture" src="images/ProfPic.jpeg" alt="Personal Picture">
+            </div>
+            <div class="bio">
+                <div class="bio-1">Born and raised right outside of Washington, DC, I am a raising Senior at Brown University studying computer science and economics. </div>
+                <div class="bio-1">I enjoy creating interesting designs to simplify a user’s experience with an interface.</div>
+                <div class="bio-1">I have experience with software engineering and hypermedia applcations</div>
+            </div>
+        </div>
+
+        <div class="detail-column">
+            <div class="detail-row">
+                <img class= "detail-picture" src="images/Thumbs.png" alt="Personal Picture">
+                <div class="specific-column">
+                    <div class="bold-title">Detail-oriented Designer</div>
+                    <div class="subtext">subtext subtext subtext</div>
+                </div>
+            </div>
+            <!-- <div class="horizontal-line"></div> -->
+        </div>
+        <div class="horizontal-line-short"></div>
+       
+        <div class="detail-column">
+            <div class="detail-row">
+                <img class= "detail-picture" src="images/Thumbs.png" alt="Personal Picture">
+                <div class="specific-column">
+                    <div class="bold-title">Detail-oriented Designer</div>
+                    <div class="subtext">subtext subtext subtext</div>
+                </div>
+            </div>
+            <!-- <div class="horizontal-line"></div> -->
+        </div>
+        <div class="horizontal-line-short"></div>
+        <div class="detail-column">
+            <div class="detail-row">
+                <img class= "detail-picture" src="images/Thumbs.png" alt="Personal Picture">
+                <div class="specific-column">
+                    <div class="bold-title">Detail-oriented Designer</div>
+                    <div class="subtext">subtext subtext subtext</div>
+                </div>
+            </div>
+            <!-- <div class="horizontal-line"></div> -->
+        </div>
+        <div class="horizontal-line-short"></div>
+      
+
+       
+    </div>
+
+    <div class="bottom-bar">
+        <div class="made">
+          CODED WITH LOVE BY EMILY PERELMAN
+        </div>
+  
+        <div class = "icons">
+          <div class="linkedin"> 
+            <a href="https://www.linkedin.com/in/emily-perelman-726489252/" target="_blank">
+               <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+         
+        <div class="email">
+          <a href="mailto:emily_perelman@brown.edu">
+             <i class="fas fa-envelope fa-2x"></i></div>
+          </a>     
+        </div> 
+    </div>
+  
+  
+
+
+
+
+
+
+    <script>
+        function goHome(){
+          window.location.href = "index.html"
+        }
+        
+        function goToCaseStudies() {
+          window.location.href = "index.html#caseStudies"; // Add the section ID as a hash parameter
+        }
+  
+        window.onload = function() {
+        // Check if the URL contains a hash parameter
+        const hash = window.location.hash;
+        if (hash === "#caseStudies") {
+          // Scroll to the corresponding section
+          const caseStudiesSection = document.getElementById("caseStudies");
+          if (caseStudiesSection) {
+            caseStudiesSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      };
+      </script>
+    </body>
+
