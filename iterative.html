@@ -101,13 +101,13 @@
     <div class="sketches">
         <div class="sketches-text">SKETCHES</div>
         <div class="sketch-column-1">
-            <img class="sketch-1-image" src="images/Sketch1.png" alt="Sketches">
-            <img class="sketch-2-image" src="images/Sketch2.png" alt="Sketches">
+            <img class="sketch-1-image" src="images/Sketch1.png" alt="Sketche 1">
+            <img class="sketch-2-image" src="images/Sketch2.png" alt="Sketche 2">
             
         </div>
         <div class="sketch-column-2">
-            <img class="sketch-3-image" src="images/Sketch3.png" alt="Sketches">
-            <img class="sketch-4-image" src="images/Sketch4.png" alt="Sketches">
+            <img class="sketch-3-image" src="images/Sketch3.png" alt="Sketche 3">
+            <img class="sketch-4-image" src="images/Sketch4.png" alt="Sketche 4">
         </div>
         <!-- <div class="image-container"> -->
             <!-- <img class="linear-image" src="images/Linearsteps.png" alt="Obersation Steps"> -->
@@ -147,7 +147,7 @@
 
 
         <div class="reworking">
-            <div class="sub-title">REWORKING</div>
+            <div class="sub-title">REWORKING AND <a href="https://www.figma.com/file/50TYCr9AH0QHsNiBSxBS9W/Warp-Onboarding-Final?type=design&node-id=0%3A1&mode=design&t=dGNZ7LAt20uHDaEv-1" class="figma-link">FINAL DESIGN</a> </div>
             <div class="sub-text" id="reworking-text">We created a second low-fi wireframe that incorporated our critiques. We utilized this mockup to develop a style guide and a high-fi prototype to show the finalized flow of our design. We split up the frames to develop and organize the login/sign-up flow into the marketing survey in the “blocklist” design, moving to allow users to choose their configurations. From here, the experience delves into the unique features, talking about creating commands, demonstrating a user’s drive, and the inventive ideas of AI assistance. <span class="bold"> I specifically focused on including the features that were not previously highlighted, such as the Drive and AI.</span> I looked at how these features were previously presented to users and incorporated them into the onboarding process.</div>
         </div>
     </div>
@@ -162,9 +162,9 @@
         <img class="oglowfi-2-image" src="images/HiFi2.png" alt="Hi-Fi 2">
         <img class="oglowfi-2-image" src="images/HiFi3.png" alt="Hi-Fi 3">
         <img class="oglowfi-4-image" src="images/HiFi4.png" alt="Hi-Fi 4">
-        <img class="oglowfi-4-image" src="images/HiFi5.png" alt="Hi-Fi 4">
-        <img class="oglowfi-4-image" src="images/HiFi6.png" alt="Hi-Fi 4">
-        <img class="oglowfi-4-image" src="images/HiFi7.png" alt="Hi-Fi 4">
+        <img class="oglowfi-4-image" src="images/HiFi5.png" alt="Hi-Fi 5">
+        <img class="oglowfi-4-image" src="images/HiFi6.png" alt="Hi-Fi 6">
+        <img class="oglowfi-4-image" src="images/HiFi7.png" alt="Hi-Fi 7">
     </div>
     <div class="features">
         <div class="features-text">FEATURES</div>
@@ -220,7 +220,7 @@
 
 
     
-
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up fa"></i></div></button>
 
 
     
@@ -248,6 +248,34 @@
         }
       }
     };
+
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+  scrollFunction();
+};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    console.log("should appear")
+      scrollToTopBtn.style.display = "block";
+  } else {
+      scrollToTopBtn.style.display = "none";
+  }
+}
+
+scrollToTopBtn.addEventListener("click", function() {
+scrollToTop();
+});
+
+function scrollToTop() {
+  // Smooth scroll animation
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+}
     </script>
   </body>
   

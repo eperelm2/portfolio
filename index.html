@@ -11,23 +11,23 @@
 
   <body>
     <div class="navbar">
-      <div class = "name" id="name" onclick="scrollUpFunction">EMILY PERELMAN</div>
-      <div class = "other-pages"> 
-          <div class = "nav-text" onclick="scrollFunction()">WORK</div>
-          <div class = "nav-text" >ABOUT</div>
-          <!-- <div class = "nav-text">FUN</div> -->
-          <div class = "nav-text">RESUME</div>
+      <div class="name" id="name" onclick="scrollUpFunction()">EMILY PERELMAN</div>
+      <div class="other-pages"> 
+          <div class="nav-text" onclick="scrollDownFunction()">WORK</div>
+          <div class="nav-text">ABOUT</div>
+          <!-- <div class="nav-text">FUN</div> -->
+          <div class="nav-text">RESUME</div>
       </div>
-    </div>
+  </div>
 
-    <div class="introo">
+    <div class="introo" id ="intro">
       <div class="intro-roww">
         <div class="intro-coll">
             <div class="hi-im">Hi, I'm Emily!</div>
-            <div class="bio">I’m a Product Manager with a passion for analyzing user research to design <span class="highlight-pink">engaging</span> and <span class="highlight-yellow">unique</span> interfaces.</div>
+            <div class="bio">I’m a Product Manager with a passion for analyzing user research to design <span class="highlight-pink">engaging</span> and <span class="highlight-yellow">user-friendly</span> interfaces.</div>
         </div>
         <div class="image-logo">
-          <img class="animation-image" src="gifs/LogoGif.gif" alt="Animation Logo">
+          <img class="animation-image" src="gifs/LogoGif.gif" alt="Animation logo">
         </div>
         
       </div>
@@ -119,21 +119,21 @@
          
         </div> 
 
-       
+     
 
     </div>
-
+   <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up fa"></i></div></button>
 
     <script>
 
-      function scrollFunction() {
+      function scrollDownFunction() {
         const element = document.getElementById("caseStudies");
+        console.log("in scroll function " + element)
         element.scrollIntoView({ behavior: 'smooth' });
       }
 
-      function scrollUpFunction(){
-        const element = document.getElementById("name");
-        element.scrollIntoView({ behavior: 'smooth' });
+      function scrollUpFunction() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
       function goToPersonas() {
@@ -147,5 +147,35 @@
       function goToDevelopment() {
         window.location.href = "development.html";
       }
+
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      window.onscroll = function() {
+        scrollFunction();
+    };
+
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          console.log("should appear")
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+
+    scrollToTopBtn.addEventListener("click", function() {
+      scrollToTop();
+    });
+
+    function scrollToTop() {
+        // Smooth scroll animation
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+      }
+
+
       </script>
   </body>

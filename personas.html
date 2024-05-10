@@ -31,7 +31,7 @@
           <div class="role-text"><span class="role-bold">Timeline: </span>February 2024</div>
       </div>
       <div class="image-container" id="story-image">
-         <img class="inside-story-image" src="images/InsideStoryboardImage.png" alt="Storyboard Casestudy">
+         <img class="inside-story-image" src="images/InsideStoryboardImage.png" alt="Storyboard Logo">
       </div>
      
     </div>
@@ -165,6 +165,8 @@
       </div> 
   </div>
 
+  <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up fa"></i></div></button>
+
 
     
 
@@ -190,6 +192,35 @@
         }
       }
     };
+
+
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+  scrollFunction();
+};
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    console.log("should appear")
+      scrollToTopBtn.style.display = "block";
+  } else {
+      scrollToTopBtn.style.display = "none";
+  }
+}
+
+scrollToTopBtn.addEventListener("click", function() {
+scrollToTop();
+});
+
+function scrollToTop() {
+  // Smooth scroll animation
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+}
     </script>
   </body>
   

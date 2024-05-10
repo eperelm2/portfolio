@@ -117,7 +117,7 @@ display: flex;
 
 .logo-image {
     position: relative;
-    height: 400px; /* Set the height slightly smaller than the image height */
+    height: 380px; /* Set the height slightly smaller than the image height */
     width: 100px;
     overflow: hidden; /* Hide the overflow */
     margin-bottom: -20px;
@@ -167,7 +167,7 @@ display: flex;
 
 .image-logo{
     padding-top:2%;
-    height: 300px; 
+    height: 280px; 
     width:800px;
     overflow: hidden;
 }
@@ -346,4 +346,33 @@ display: flex;
   .cards {
       flex: 1 1 calc(100% - 20px); /* Single card per row for smaller screens */
   }
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border: 2px solid #007bff;
+    background-color: #fffffc;;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#scrollToTopBtn:hover{
+    background-color: #007bff;;
+    color: white;
+}
+
+#scrollToTopBtn .fas.fa-arrow-up{
+    color: #007bff;
+}
+
+#scrollToTopBtn:hover .fas.fa-arrow-up{
+    color: white
 }

@@ -399,3 +399,11 @@ height:70vh;
     font-size:14px;
     color:rgba(0, 0, 0, 0.748);
 }
+
+.figma-link{
+    color: rgba(0, 0, 0, 0.748);
+}
+
+.figma-link:hover{
+    color: rgb(0, 17, 255)
+}

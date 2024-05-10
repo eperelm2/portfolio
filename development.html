@@ -54,10 +54,10 @@
         </div> -->
 
         <div class="company-row">
-              <img class ="spotify-col" src="images/Spotify.png" alt="Spotify">
+              <img class ="spotify-col" src="images/Spotify.png" alt="Spotify Favorites">
               
-              <img class="amazon-col" src="images/Amazon.png" alt="Amazon">
-              <img class="gmail-col" class="confused-image-right" src="images/Gmail.png" alt="Gmail">
+              <img class="amazon-col" src="images/Amazon.png" alt="Amazon Cart">
+              <img class="gmail-col" class="confused-image-right" src="images/Gmail.png" alt="Gmail Favorites">
             </div>
       </div>
     
@@ -93,9 +93,9 @@
         <div class="integrating-research">
             <div class="integrating-research-row">
               <div class="research-images-column">
-                    <img class="confused-image" src="images/Clipboardpng.png" alt="Confused">
+                    <img class="confused-image" src="images/Clipboardpng.png" alt="Filter and Sorting Image">
                   
-                    <img class="confused-image-right" src="images/heartpng.png" alt="Confused">
+                    <img class="confused-image-right" src="images/heartpng.png" alt="Heart Image">
                   </div>
 
                   <div class="integrating-research-text">
@@ -112,7 +112,7 @@
         
 
         <div class="product">
-            <div class="sub-title">THE END PRODUCT</div>
+            <div class="sub-title">  <a href="https://development-emily-perelman.vercel.app" target="_blank" class="website-link">THE FINAL PRODUCT</a></div>
             <div class="sub-text" id="end-text">I took my competitive analysis and conceptual ideas to create a clean and organized interface that demonstrates filtering, sorting, and aggregating abilities. I designed a dashboard holding a list of song cards containing their cover photo, artist, title, length, rating (out of 5 stars), and genre. I have two filterable categories enabling users to filter songs based on their ratings and genres. I created a sorting functionality that organizes the song cards based on the respective song’s length. Each song can be favorited and added to the aggregator list. A user can see how many songs are in the favorites list, as well as the songs’ titles and lengths, and can remove the songs from this list. The song card itself also displays if the item is in the aggregated list via the heart icon; the user can click this button on a song’s card to add or remove the song from the favorites list.</div>
         </div>
 
@@ -167,6 +167,8 @@
       </div> 
   </div>
 
+  <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up fa"></i></div></button>
+
 
 
 
@@ -195,6 +197,34 @@
         }
       }
     };
+
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      window.onscroll = function() {
+        scrollFunction();
+    };
+
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          console.log("should appear")
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+
+    scrollToTopBtn.addEventListener("click", function() {
+      scrollToTop();
+    });
+
+    function scrollToTop() {
+        // Smooth scroll animation
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+      }
     </script>
   </body>
   
