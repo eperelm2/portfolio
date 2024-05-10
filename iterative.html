@@ -14,8 +14,8 @@
       <div class="name" onclick="goHome()">EMILY PERELMAN</div>
       <div class="other-pages"> 
         <div class="nav-text" onclick="goToCaseStudies()">WORK</div>
-        <div class="nav-text">ABOUT</div>
-        <div class="nav-text">RESUME</div>
+        <div class="nav-text" onclick="goToAbout()">ABOUT</div>
+        <div class="nav-text"><a class="resume" href="https://drive.google.com/file/d/13Xg8L0_E7ikFt_Y-PEl8VxfVHHTav38u/view?usp=sharing" target="_blank">RESUME</a></div>
       </div>
     </div>
 
@@ -53,7 +53,7 @@
                
                 <div class="right-column">
                     <div class="sub-title">OUR TASK</div>
-                    <div class="sub-text" id="task-text">Our team of four was tasked with altering the onboarding experience. The current onboarding process starts with a marketing survey and is followed by a brief tutorial on some features in their organizational structure of “blocklists.” We focused on improving and expanding the sequence to keep users engaged and well-informed on all of the unique features. Through our work, Warp sought to streamline user setup and minimize the time needed to determine if the product was right for them.</div>
+                    <div class="sub-text" id="task-text">Our team of four was tasked with altering the onboarding experience. The current onboarding process starts with a marketing survey and is followed by a brief tutorial on some features in their organizational structure of “blocklists.” We focused on improving and expanding the sequence to keep users engaged and well-informed on all of the unique features. Through our work, Warp sought to <span class="bold">streamline user setup</span> and <span class="bold">minimize the time needed</span>  to determine if the product was right for them.</div>
                 </div>
 
                 <div class="our-task-picture-row">
@@ -78,9 +78,9 @@
 
         <div class="onboarding-research">
             <div class="onboarding-research-column">
-                <div class="sub-title">ONBOARDING RESEARCH</div>
+                <div class="sub-title">RESEARCH</div>
                 <div class="onboarding-research-row">
-                    <div class="sub-text" id="research-text">To begin our remodeling of the onboarding experience, we read through Warp’s product brief and <a href="https://docs.warp.dev/features/warp-ai">feature list</a>. We got a better understanding of what features they wanted us to handle and their target users. I went through the onboarding process and took notes about what features made sense and what I found confusing. We reached out to the design team and asked for clarifications on company jargon and the motivation of the product. </div>
+                    <div class="sub-text" id="research-text">To begin remodeling the onboarding experience, we read through Warp’s product brief and <a href="https://docs.warp.dev/features/warp-ai">feature list</a>. This helped us better understand what features they wanted us to handle and their target audience. I then went through the onboarding process and took notes about what features made sense and what I found confusing. We reached out to the design team and asked for clarifications on company jargon and the product's motivation.</div>
            
                     <img class="onboarding-image" src="images/Onboarding.png" alt="Onboarding Image">
                 </div>
@@ -91,7 +91,7 @@
         <div class="beginning-design">
             <div class="right-column">
                 <div class="sub-title">BEGINNING OF DESIGN</div>
-                <div class="sub-text" id="design-text">Our team set out to create eight independent sketches, two per person. One design was relatively straightforward, while the other was more far-fetched and elaborate. We spent a lot of time analyzing and determining what features from each of our sketches to include in the final development. Specifically, from my research and sketching, we decided to incorporate hidden but distinctive features that were missing in the onboarding experience, such as the Warp drive and the AI features.</div>
+                <div class="sub-text" id="design-text">Our team set out to create eight independent sketches, two per person. One design was relatively straightforward, while the other was more far-fetched and elaborate. We spent a lot of time analyzing and determining what features from each of our sketches to include in the final development. Specifically, from my research and sketching, we decided to incorporate hidden but distinctive features missing in the onboarding experience, such as the Warp drive and the AI features.</div>
             </div>
 
         </div>
@@ -100,12 +100,12 @@
 
     <div class="sketches">
         <div class="sketches-text">SKETCHES</div>
-        <div class="sketch-column-1">
+        <div class="sketch-row-1">
             <img class="sketch-1-image" src="images/Sketch1.png" alt="Sketche 1">
             <img class="sketch-2-image" src="images/Sketch2.png" alt="Sketche 2">
             
-        </div>
-        <div class="sketch-column-2">
+        <!-- </div> -->
+        <div class="sketch-row-2">
             <img class="sketch-3-image" src="images/Sketch3.png" alt="Sketche 3">
             <img class="sketch-4-image" src="images/Sketch4.png" alt="Sketche 4">
         </div>
@@ -119,13 +119,26 @@
     <div class="main-container">
         <div class="og-low-fi">
             <div class="sub-title">ORIGINAL LOW-FI DESIGN</div>
-            <div class="sub-text" id="lo-text">After discussing which features to incorporate, we designed our first low-fi wireframe to provide a template of the product flow. We <span class="bold">adjusted the login process</span>  to differentiate the text of logging in and signing up. We also <span class="bold">moved the sign-up screen and marketing survey</span> into the Warp terminal app itself but kept these features separate models. Our goal was to keep these two components together but be distinct from the command-line interaction within the terminal. We <span class="bold">adjusted the marketing survey</span> to remove the user's need to click the "Next" button in the survey and instead replaced it with an automatic advance of the questions. We decided to keep the "blocklist" experience once the user reaches the terminal, meaning the appearance of a typical scrolling command-by-command terminal UI with the addition of selectable blocks. We <span class="bold">expanded on Warp's existing configuration setup</span> to allow users to select their shell to reduce confusion about porting over their existing setup. We then walked through Warp's features: we attempted to <span class="bold">balance existing onboarding components</span> and <span class="bold">introduce different features</span> to promote the app's uniqueness.</div>
+            <div class="sub-text" id="lo-text">After discussing which features to incorporate, we designed our first low-fi wireframe to provide a template of the product flow. We decided to include the following six features.</div>
+        </div>
+    </div>
+
+    <div class="lo-fi-column">
+        <div class="lo-fi-row">
+            <img class="low-fi-design" src="images/lo-fi-design1.png" alt="Original Low-Fi 1">
+            <img class="low-fi-design" src="images/lo-fi-design2.png" alt="Original Low-Fi 1">
+            <img class="low-fi-design" src="images/lo-fi-design3.png" alt="Original Low-Fi 1">
+        </div>
+        <div class="lo-fi-row">
+            <img class="low-fi-design" src="images/lo-fi-design4.png" alt="Original Low-Fi 1">
+            <img class="low-fi-design" src="images/lo-fi-design5.png" alt="Original Low-Fi 1">
+            <img class="low-fi-design" src="images/lo-fi-design6.png" alt="Original Low-Fi 1">
         </div>
     </div>
 
     <div class="low-fi">
         <div class="low-fi-text">LOW-FI MOCKUP</div>
-        <img class="oglowfi-1-image" src="images/OGlowfi1.png" alt="Original Low-Fi 1">
+            <img class="oglowfi-1-image" src="images/OGlowfi1.png" alt="Original Low-Fi 1">
             <img class="oglowfi-2-image" src="images/OGlowfi2.png" alt="Original Low-Fi 2">
             <img class="oglowfi-3-image" src="images/OGlowfi3.png" alt="Original Low-Fi 3">
             <img class="oglowfi-4-image" src="images/OGlowfi4.png" alt="Original Low-Fi 4">
@@ -135,20 +148,39 @@
 
 
         <div class="first-critique">
-            <div class="right-column">
+            <!-- <div class="right-column"> -->
                 <div class="sub-title">FIRST ROUND CRITIQUES</div>
                 <div class="first-critique-row">
-                    <img class="thumb-image" src="images/Thumbs.png" alt="Positive and Negative Image"> 
-                        <div class="sub-text">We sent our initial wireframe to the designers for feedback on the direction we were heading. We also shared our design with non-warp users to receive advice on our general formatting and sketches. New user critiques were rooted in design: removing unnecessary whitespace and keeping each frame in the wireframe consistent with the actual user process of the "blocklist" design. We received advice to mark a user’s progress in the marketing survey or the entire onboarding experience to keep users engaged and up-to-date on the timing of the process. Lastly, our client expressed their interest in having the marketing survey moved into the “blocklist” structure in the terminal.   
+                   
+                        <div class="first-critique-column">
+                            <div class="sub-text">We sent our initial wireframe to the designers for feedback on the direction we were heading. We also shared our design with non-warp users to receive advice on our general formatting and sketches. New user critiques were rooted in design:    
                         </div>
+                        <div class="sub-text">
+                            <ul>
+                                <li>Remove unnecessary whitespace</li>
+                                <li>Keep each frame in the wireframe consistent with the "blocklist" design</li>
+                                <li>Mark a user’s progress in the marketing survey</li>
+                            </ul>
+
+
+                            
+                        </div>
+                        <div class="sub-text">
+                            Lastly, our client expressed interest in having the marketing survey moved into the “blocklist” structure in the terminal.
+                        </div>
+                        </div>
+                        <img class="thumb-image" src="images/Thumbs.png" alt="Positive and Negative Image"> 
+                        
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
 
 
         <div class="reworking">
-            <div class="sub-title">REWORKING AND <a href="https://www.figma.com/file/50TYCr9AH0QHsNiBSxBS9W/Warp-Onboarding-Final?type=design&node-id=0%3A1&mode=design&t=dGNZ7LAt20uHDaEv-1" class="figma-link">FINAL DESIGN</a> </div>
-            <div class="sub-text" id="reworking-text">We created a second low-fi wireframe that incorporated our critiques. We utilized this mockup to develop a style guide and a high-fi prototype to show the finalized flow of our design. We split up the frames to develop and organize the login/sign-up flow into the marketing survey in the “blocklist” design, moving to allow users to choose their configurations. From here, the experience delves into the unique features, talking about creating commands, demonstrating a user’s drive, and the inventive ideas of AI assistance. <span class="bold"> I specifically focused on including the features that were not previously highlighted, such as the Drive and AI.</span> I looked at how these features were previously presented to users and incorporated them into the onboarding process.</div>
+            <div class="right-column">
+            <div class="sub-title">REWORKING AND <a href="https://www.figma.com/file/50TYCr9AH0QHsNiBSxBS9W/Warp-Onboarding-Final?type=design&node-id=0%3A1&mode=design&t=dGNZ7LAt20uHDaEv-1" target="_blank" class="figma-link">FINAL DESIGN</a> </div>
+            <div class="sub-text" id="reworking-text">We created a second low-fi wireframe that incorporated our critiques. We utilized this mockup to develop a style guide and a high-fi prototype to show the finalized flow of our design. We split up the frames to develop and organize the login/sign-up flow into the marketing survey in the “blocklist” design, moving into users choosing their configurations. From here, the experience delves into the unique features, talking about creating commands, demonstrating a user’s drive, and the inventive ideas of AI assistance. I specifically focused on including the features that were not previously highlighted, such as the Drive and AI. I looked at how these features were previously presented to users and incorporated them into the onboarding process.</div>
+            </div>
         </div>
     </div>
 
@@ -167,7 +199,7 @@
         <img class="oglowfi-4-image" src="images/HiFi7.png" alt="Hi-Fi 7">
     </div>
     <div class="features">
-        <div class="features-text">FEATURES</div>
+        <div class="features-text">HI-FI PROTOTYPE FEATURES</div>
         <div class="hi-fi-column">
             <div class="gif-column">
                 <div class="gif-text">Marketing survey in "blocklist" structure</div>
@@ -235,6 +267,10 @@
 
       function goToCaseStudies() {
         window.location.href = "index.html#caseStudies"; // Add the section ID as a hash parameter
+      }
+
+      function goToAbout() {
+        window.location.href = "about.html"; 
       }
 
       window.onload = function() {

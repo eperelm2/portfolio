@@ -14,9 +14,9 @@
       <div class="name" id="name" onclick="scrollUpFunction()">EMILY PERELMAN</div>
       <div class="other-pages"> 
           <div class="nav-text" onclick="scrollDownFunction()">WORK</div>
-          <div class="nav-text">ABOUT</div>
+          <div class="nav-text" onclick="goToAbout()">ABOUT</div>
           <!-- <div class="nav-text">FUN</div> -->
-          <div class="nav-text">RESUME</div>
+          <div class="nav-text"><a class="resume" href="https://drive.google.com/file/d/13Xg8L0_E7ikFt_Y-PEl8VxfVHHTav38u/view?usp=sharing" target="_blank">RESUME</a></div>
       </div>
   </div>
 
@@ -24,7 +24,7 @@
       <div class="intro-roww">
         <div class="intro-coll">
             <div class="hi-im">Hi, I'm Emily!</div>
-            <div class="bio">I’m a Product Manager with a passion for analyzing user research to design <span class="highlight-pink">engaging</span> and <span class="highlight-yellow">user-friendly</span> interfaces.</div>
+            <div class="bio">I’m a product manager passionate about analyzing user research to design <span class="highlight-pink">engaging</span> and <span class="highlight-yellow">user-friendly</span> interfaces.</div>
         </div>
         <div class="image-logo">
           <img class="animation-image" src="gifs/LogoGif.gif" alt="Animation logo">
@@ -58,18 +58,6 @@
     <div class="case-studies" id="caseStudies">
       <div class= "case-studies-title">CASE STUDIES</div>
       <div class= "case-studies-cards">
-        <div class="cards development-case" onclick="goToDevelopment()">
-          <div class="card-image">
-            <img class="logo" src="images/Developmentlogo.png" alt="Development logo">
-          </div>
-          <div class="features">
-              <div class="feat">React</div>
-              <div class="feat">JavaScript</div>
-              <div class="feat">Competitive Analysis</div>
-          </div>
-          <div class="card-desc" >The Sound of Competition</div>
-          <div class="quick-card-desc" >Comparing Companies to Create an Aggregator Interface</div>
-        </div>
         <div class="cards iterative-case" onclick="goToIterative()">
           <div class="card-image">
             <img class="logo" src="images/Warplogo.png" alt="Warp logo">
@@ -81,6 +69,18 @@
         </div>
           <div class="card-desc">All On Board</div>
           <div class="quick-card-desc" >Reimagining the Terminal: Onboarding Edition</div>
+        </div>
+        <div class="cards development-case" onclick="goToDevelopment()">
+          <div class="card-image">
+            <img class="logo" src="images/Developmentlogo.png" alt="Development logo">
+          </div>
+          <div class="features">
+              <div class="feat">React</div>
+              <div class="feat">JavaScript</div>
+              <div class="feat">Competitive Analysis</div>
+          </div>
+          <div class="card-desc" >The Sound of Competition</div>
+          <div class="quick-card-desc" >Comparing Companies to Create an Aggregator Interface</div>
         </div>
         <div class="cards personas-case" onclick="goToPersonas()">
           <div class="card-image">
@@ -146,6 +146,10 @@
 
       function goToDevelopment() {
         window.location.href = "development.html";
+      }
+
+      function goToAbout() {
+        window.location.href = "about.html"; 
       }
 
       var scrollToTopBtn = document.getElementById("scrollToTopBtn");

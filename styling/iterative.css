@@ -89,7 +89,10 @@
     margin-top: 6%;
     display: flex;
     flex-direction: column;
+}
 
+.og-low-fi{
+    margin-top:10%;
 }
 
 .sub-title{
@@ -105,7 +108,7 @@
     color: #7B7B7B;
 }
 
-.right-column{
+.right-column, #reworking-text{
     display: flex;
     flex-direction: column;
     text-align: end;
@@ -181,8 +184,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-color: #E6E6E6;
-    width: 100%; /* Adjusted width calculation */
-    height: 180vh;
+    width: 100%;
+    height: 400vh;
     border-radius: 9px;
 }
 
@@ -191,10 +194,12 @@
     color:rgba(0, 0, 0, 0.748);
     margin-right: auto;
     margin-left:5%;
+    margin-top: 2%;
 }
 
 .hi-fi-text, .features-text{
     margin-top: 2%;
+    margin-bottom:2%;
 }
 
 .first-critique-row{
@@ -208,7 +213,7 @@
 .thumb-image{
     width:30vw;
     height:30vh;
-    margin-right: 18%;
+    margin-left: 18%;
 }
 
 .style-guide{
@@ -217,7 +222,7 @@
     flex-direction: column;
     background-color: #E6E6E6;
     width: 100%; /* Adjusted width calculation */
-    height: 80vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     /* border-top-left-radius: 9px; 
@@ -232,6 +237,7 @@
     text-align: center;
     margin-left:5%;
     margin-bottom: 1%;
+    margin-top:3%;
 }
 
 .hi-fi{
@@ -240,7 +246,7 @@
     justify-content: space-evenly;
     background-color: #f2f2f2;
     width: 100%; /* Adjusted width calculation */
-    height: 230vh;
+    height: 250vh;
     border-radius: 9px;
     /* border-top-left-radius: 9px; 
     border-top-right-radius: 9px; */
@@ -270,29 +276,29 @@ a{
 
 .sketch-column-1{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 3%;
     margin-top:0;
 }
 
 .sketch-column-2{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 3%;
     margin-right: 3%;
 }
 
-.sketch-1-image  {
+.sketch-1-image, .sketch-2-image ,.sketch-3-image ,.sketch-4-image  {
     width: 40vw; /* Adjust size as needed */
     height: 40vh;
     margin-bottom: 3%; /* Add margin between images */
     border-radius: 2%;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+    margin-left:4%;
 }
 
-.sketch-2-image , .sketch-4-image {
+/* .sketch-2-image , .sketch-4-image {
     width: 40vw;
-    /* margin-top:10%; */
     height:40vh; 
     margin-left: auto;
     border-radius: 2%;
@@ -301,12 +307,12 @@ a{
 }
 
  .sketch-3-image{
-    width: 40vw; /* Adjust size as needed */
+    width: 40vw; 
     height: 50vh;
     margin-bottom: 3%; 
     border-radius: 2%;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .sketches{
     margin-top: 4%;
@@ -314,15 +320,15 @@ a{
     flex-direction: column;
     background-color: #E6E6E6;
     width: 100%; /* Adjusted width calculation */
-    height: 200vh;
+    height: 105vh;
     border-radius: 9px;
 }
 
 .sketches-text{
     font-size: 26px;
     color:rgba(0, 0, 0, 0.748);
-    margin-left: auto;
-    margin-right:8%;
+    /* margin-left: auto; */
+    margin-left:4%;
     margin-top:3%
 }
 
@@ -339,6 +345,10 @@ height:70vh;
     width:80vw;
     margin-left: 7%;
     /* height: 40vh; */
+}
+
+.oglowfi-4-image{
+    margin-bottom:3%;
 }
 
 .style-guide-image{
@@ -382,11 +392,16 @@ height:70vh;
     color:#FFFFFC;
 }
 
-#reimagine-text, #lo-text, #reworking-text, #takeaway-text {
+#reimagine-text, #takeaway-text {
     margin-right: 24%;
 }
 
-#task-text, #design-text{
+#lo-text{
+    margin-right: 24%;
+    margin-bottom: 4%;
+}
+
+#task-text, #design-text, #reworking-text{
     margin-left: 26%
 }
 
@@ -406,4 +421,34 @@ height:70vh;
 
 .figma-link:hover{
     color: rgb(0, 17, 255)
+}
+
+.lo-fi-row{
+    display: flex;
+    flex-direction: row;
+    margin-left:7%;
+    margin-right:7%;
+}
+
+.lo-fi-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom:4%;
+    margin-top: 2%;
+}
+
+.low-fi-design{
+    width:26vw;
+    height: 32vh;
+}
+
+.first-critique-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.bold-text{
+    font-weight: bold;
+    display: inline;
 }

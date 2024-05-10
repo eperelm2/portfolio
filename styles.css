@@ -376,3 +376,14 @@ display: flex;
 #scrollToTopBtn:hover .fas.fa-arrow-up{
     color: white
 }
+
+.resume{
+    color: #BEBEBE;
+    text-decoration: none;
+  
+}
+
+.resume:hover{
+    color:#4E4E4E;
+    text-decoration: none;
+}
