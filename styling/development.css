@@ -1,6 +1,6 @@
 .main-container{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 17%;
+    margin-right: 17%;
     line-height:1.3;
 }
 
@@ -268,4 +268,12 @@
 
 .citations{
     color: #FFFFFC
+}
+
+#rivalaries-text, #results-text, #end-text, #away-text{
+    margin-right:24%
+}
+
+.bold{
+    font-weight: bold;
 }
