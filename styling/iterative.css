@@ -17,10 +17,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; /* still think about this */
-    font-size: 20px;
-    margin-top: 6%;
-    
+    text-align: center;
+    font-size: 19px;
+    margin-top: 5%;
+    line-height:1.7;
+    /* margin-left:20%;
+    margin-right:20%; */
+    font-weight:500;
+    color: #7B7B7B;
+    margin-left:12%;
+    margin-right:12%;
 }
 
 .row-intro{
@@ -111,6 +117,19 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.blocklist-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.blocklist-text{
+    font-size:14px;
+    color:rgba(0, 0, 0, 0.748);
+    margin-bottom: 1%;
+
 }
 
 .survey-image{
@@ -264,17 +283,17 @@ a{
 }
 
 .sketch-1-image  {
-    width: 50vw; /* Adjust size as needed */
-    height: 50vh;
+    width: 40vw; /* Adjust size as needed */
+    height: 40vh;
     margin-bottom: 3%; /* Add margin between images */
     border-radius: 2%;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 }
 
 .sketch-2-image , .sketch-4-image {
-    width: 50vw;
+    width: 40vw;
     /* margin-top:10%; */
-    height:60vh; 
+    height:40vh; 
     margin-left: auto;
     border-radius: 2%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -282,8 +301,8 @@ a{
 }
 
  .sketch-3-image{
-    width: 45vw; /* Adjust size as needed */
-    height: 53vh;
+    width: 40vw; /* Adjust size as needed */
+    height: 50vh;
     margin-bottom: 3%; 
     border-radius: 2%;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
@@ -295,7 +314,7 @@ a{
     flex-direction: column;
     background-color: #E6E6E6;
     width: 100%; /* Adjusted width calculation */
-    height: 250vh;
+    height: 200vh;
     border-radius: 9px;
 }
 
@@ -333,7 +352,7 @@ height:70vh;
 .features {
     border-bottom-left-radius: 9px; 
     border-bottom-right-radius: 9px;
-    height: 170vh;
+    height: 180vh;
     width: 100%;
     background-color: #ededed;
     margin-left: auto;
@@ -368,5 +387,15 @@ height:70vh;
 }
 
 #task-text, #design-text{
-    margin-left: 24%
+    margin-left: 26%
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.gif-text{
+    margin-bottom: 1%;
+    font-size:14px;
+    color:rgba(0, 0, 0, 0.748);
 }
