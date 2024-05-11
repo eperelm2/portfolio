@@ -55,6 +55,8 @@
 .inside-headphones-image{
     border-radius: 8px;
     height:90%;
+    max-width: 100%;
+    margin-left:auto;
     display: flex;
     justify-content: center;
 }
